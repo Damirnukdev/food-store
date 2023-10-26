@@ -1,0 +1,377 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+body{
+    font-family: 'Barlow', sans-serif;
+}
+main{
+    display: flex;
+}
+.sidebar{
+    width: 5%;
+    min-height: 100vh;
+    background: #1F1D2B;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.content{
+    width: 65%;
+    background: #252836;
+    min-height: 100vh;
+    padding: 10px 20px;
+}
+.order{
+    width: 30%;
+    background: #1F1D2B;
+    min-height: 100vh;
+    padding: 15px 40px;
+}
+.sidebar-icons{
+    width: 75px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+    background: #1F1D2B;
+   border-radius: 10px 0 0 10px ;
+}
+.sidebar-icons:hover{
+    background: #252836;
+    transform: translate(+10px);
+}
+
+
+.fa-shop{
+    color: #EA7C69;
+    font-size: 20px;
+}
+.fa-house-chimney-window{
+    color: #EA7C69;
+    font-size: 20px;
+}
+.fa-percent{
+    color: #EA7C69;
+    font-size: 20px;
+}
+.fa-palette{
+    color: #EA7C69;
+    font-size: 20px;
+}
+.fa-envelope-circle-check{
+    color: #EA7C69;
+    font-size: 20px;
+}
+.fa-bell{
+    color: #EA7C69;
+    font-size: 20px;
+}
+.fa-screwdriver-wrench{
+    color: #EA7C69;
+    font-size: 20px;
+}
+.fa-person-walking-arrow-right{
+    color: #EA7C69;
+    font-size: 20px;
+}
+.content-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content-search input{
+padding: 10px 14px 10px 30px;
+border-radius: 6px;
+background: #2D303E;
+border: none;
+outline: none;
+color: #EA7C69;
+font-size: 20px;
+}
+.content-search{
+    position: relative;
+}
+.fa-magnifying-glass{
+    color: rgba(171, 187, 194, 1);
+    position: absolute;
+    top: 14px;
+    left: 8px;
+}
+.content-top h2{
+    color: var(--White, #FFF);
+    font-size: 28px;
+    font-weight: 600;
+}
+.content-top p{
+color: var(--text-lighter, #E0E6E9);
+font-size: 16px;
+font-weight: 400;
+padding: 5px;
+}
+.choice{
+    display: flex;
+    align-items: center;
+    gap: 33px;
+    color: #EA7C69;
+    padding: 20px 0;
+}
+.nav-ling{
+color: #EA7C69;
+font-size: 14px;
+font-weight: 600;
+transition: 0.2s;
+cursor: pointer;
+}
+.nav-ling:hover{
+    color: white;
+}
+.choice{
+    padding-bottom: 20px;
+    border-bottom: 2px solid #EA7C69;
+}
+.dine{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.dine h1{
+color: var(--White, #FFF);
+font-size: 20px;
+font-weight: 600;
+}
+select{
+    display: inline-flex;
+    padding: 14px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    outline: none;
+    background: #1F1D2B;
+    color: white;
+    cursor: pointer;
+}
+
+.card-blok{
+width: 192px;
+height: 226px;
+background: #1F1D2B;
+border-radius: 10px;
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.card-blok h4{
+    color: var(--White, #FFF);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+.card-blok p{
+color: var(--text-light, #ABBBC2);
+text-align: center;
+font-size: 14px;
+font-weight: 400;
+}
+.card-img{
+    position: absolute;
+   display: flex;
+   justify-content: center;
+   top: -50px;
+}
+.card-info{
+    padding-top: 110px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.card1{
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    height: 600px;
+    gap: 150px;
+    
+}
+.card1::-webkit-scrollbar{
+    width: 0;
+}
+
+.order h1{
+color: var(--White, #FFF);
+font-size: 20px;
+font-weight: 600;
+}
+.order-btn{
+display: flex;
+align-items: center;
+justify-content: flex-start;
+gap: 20px;
+padding: 25px 0;
+}
+.order-btn button{
+    line-height: 140%;
+    padding: 7px 12px;
+    background: #1F1D2B;
+    border-radius: 8px;
+    border: 1px solid #393C49;
+    outline: none;
+    color: #EA7C69;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+
+}
+.order-btn button:hover{
+color: white;
+background: #EA7C69;
+}
+
+.item h2{
+color: var(--White, #FFF);
+font-size: 16px;
+font-weight: 600;
+}
+.item h2{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.qty{
+    display: flex;
+    align-items: center;
+    
+    justify-content: flex-end;
+    gap: 50px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #EA7C69;
+}
+.scarlet1 img{
+width: 45.337px;
+height: 41.141px;
+
+}
+
+.scarlet h5{
+color: var(--White, #FFF);
+font-size: 14px;
+font-weight: 500;
+}
+.scarlet p{
+color: var(--text-light, #ABBBC2);
+font-size: 12px;
+font-weight: 500;
+padding: 7px 0;
+}
+.scarlet1{
+    display: flex;
+    align-items: center;
+    padding: 25px 0;
+    gap: 10px;
+}
+.ap{ 
+    color: var(--White, #FFF);
+    text-align: right;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    justify-content: space-between;
+    right: 40px;
+    gap: 25px;
+}
+.ap a{
+    color: white;
+    padding: 10px 14px;
+    background: #393C49;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.fa-basket-shopping{
+    color: #EA7C69;
+    padding: 20px;
+    border: 1px solid #EA7C69 ;
+    border-radius: 8px;
+}
+.fa-basket-shopping:hover{
+    color: white;
+}
+.inp{
+width: 450px;
+height: 38px;
+color: white;
+font-size: 16px;
+border-radius: 8px;
+border: 1px solid #393C49;
+background: #2D303E;
+outline: none;
+padding: 5px;
+}
+.inbasket{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.order{
+    position: relative;
+    overflow-y: scroll;
+    height: 600px;
+}
+.order-title{
+    position: sticky;
+    top: 0;
+}
+.order-title::-webkit-scrollbar {
+width: 0;
+}
+.end{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    
+}
+.end h3{
+    color: var(--text-light, #ABBBC2);
+font-size: 14px;
+font-weight: 400;
+}
+.end h4{
+    color: var(--White, #FFF);
+font-size: 16px;
+font-weight: 500;
+}
+.but-end button{
+    width: 361px;
+    height: 48px;
+    padding: 14px;
+    color: white;
+    background: #EA7C69;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+.but-end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
